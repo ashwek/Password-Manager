@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.SecureNotesModule.NotesAddActivity">
+
+        <TextView
+            android:id="@+id/NotesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secure Notes"
+            android:autoSizeTextType="uniform"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoteName"
+            android:autoSizeTextType="uniform"
+            android:layout_below="@+id/NotesTitle"
+            android:hint="Topic">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/NoteName"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/Note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NoteName"
+            android:textSize="15dp"
+            android:autoSizeTextType="uniform"
+            android:text="Notes"/>
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Note"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/AddKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/note"
+            />
+    </RelativeLayout>
+</ScrollView>

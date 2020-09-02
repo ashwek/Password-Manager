@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhil.SettingModules.RetriveMasterpassActivity"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
+    android:padding="15sp"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:text="OTP has been sent to your Registered\nE-mail id : "
+     />
+    <TextView
+        android:id="@+id/useremailtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Email.id@domain.com"/>
+    <EditText
+        android:id="@+id/otpet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter OTP"/>
+    <Button
+        android:id="@+id/otpsubmitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+    <TextView
+        android:id="@+id/resendotp"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Didn't receive OTP!!...\nClick here to Send again!!!"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhil.SettingModules.FaqActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="HardcodedText">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="FAQ"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Q.How do I change my Master Password?"
+        />
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:text="Sorry but Master Password once created can't be changed."
+            android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.What if I forget my Master Password?"/>
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:text="You can retrieve your Master Password from settings by following some simple yet secure steps."
+            android:layout_marginStart="15dp"/>
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.How many credentials can be stored in Password Manager?"/>
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"
+            android:text="There is no limit to the number of credentials that can be stored in Password Manager, however you may be limited by the disk space available on your Smartphone."/>
+    <TextView
+        android:id="@+id/q4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.How secure is Enpass:The Password Gaurd and my stored data?"/>
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"
+            android:text="Your credentials are stored after encrypting it with currently most secure encryption Algorithm - AES256."/>
+    <TextView
+        android:id="@+id/q5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.Why I don't see my forms in browser getting automatically filled?"/>
+        <TextView
+            android:id="@+id/a5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:text="To ensure complete security of user,we haven't introduced form autofill feature in any of our present versions."/>
+    <TextView
+        android:id="@+id/q6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.Why do I need to enter master-password very often on every data retrival?"/>
+        <TextView
+            android:id="@+id/a6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:text="To check user's authenticity and ensure that the credentials are in right hand we have introduced this. Securing our user's data is our first priority."/>
+    <TextView
+        android:id="@+id/q7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="Q.Can I change the name displayed in side navigation drawer?"/>
+        <TextView
+            android:id="@+id/a7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:text="Follow the following steps: Go to navigation drawer on main screen > Select Settings > Select Your Name option in Details section > Enter your new name which you want to be displayed > Select OK."/>
+    <TextView
+        android:id="@+id/q8"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="Q.How can I change 4-digit Login-pin?"/>
+        <TextView
+            android:id="@+id/a8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"
+            android:text="Follow the following steps: Go to navigation drawer on main screen > Select Settings > Select Change Pin option in Details section > Enter your new pin > Select OK."/>
+    <TextView
+        android:id="@+id/q9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.Can others see the resources added by me?"/>
+        <TextView
+            android:id="@+id/a9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"
+            android:text="No one including Application Administartor can access your resouces."/>
+    <TextView
+        android:id="@+id/q10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.What to do if my smartphone got Stolen/Lost? How to get back all the data?"/>
+        <TextView
+            android:id="@+id/a10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:text="Don't worry, We are here to help you. You just need to sign-in with id and password of that account and all data will be retrieved."/>
+    <TextView
+        android:id="@+id/q11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Q.Where is all data stored? In mine phone or on some online server?"/>
+        <TextView
+            android:id="@+id/a11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:text="All your credentials are stored on Online database to prevent it from any accidential loss and easy backup."/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EnPass</string>
+    <string name="add_password">Add Password</string>
+    <string name="activation_keys">Activation Keys</string>
+    <string name="software_name">Software Name</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Excellent</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+    <string name="internal_storage">Internal Storage</string>
+    <string-array name="imagePicker">
+        <item>From Gallery</item>
+        <item>From Camera</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

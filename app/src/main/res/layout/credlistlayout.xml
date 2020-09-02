@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:id="@+id/credit_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewbanknametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Bank Name:"
+            android:padding="5dp"
+            android:textColor="#777070"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_toEndOf="@+id/textViewbanknametv"
+            android:id="@+id/textViewbankname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#777070"
+            android:textSize="20sp"
+            android:text="Bank Name"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewaccnumtv"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:layout_height="wrap_content"
+            android:text="Account Num:"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/textViewbankname"/>
+        <TextView
+            android:layout_toEndOf="@+id/textViewaccnumtv"
+            android:id="@+id/textViewaccnum"
+            android:textColor="#777070"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/textViewbankname"/>
+        <View
+            android:background="@color/grey"
+            android:layout_marginTop="5dp"
+            android:textColor="#777070"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@+id/textViewaccnumtv"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

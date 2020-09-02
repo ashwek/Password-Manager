@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.CreditCardModule.CreditAddActivity">
+
+        <TextView
+            android:id="@+id/CreditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AccNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:layout_below="@+id/CreditTitle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/AccNumber"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bank Name"
+            android:layout_below="@+id/AccNumber"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/BankName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CardNumber"
+            android:layout_below="@+id/BankName"
+            android:hint="Card Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/CardNumber"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpiryDate"
+            android:layout_below="@+id/CardNumber"
+            android:hint="Expiry Date"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ExpiryDateet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ExpiryDate"
+                android:inputType="date"
+                android:clickable="true"
+                android:focusable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cvv"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/ExpiryDate"
+            android:hint="CVV Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Cvv"
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Cvv"
+            android:textSize="15sp"
+            android:text="Extra Notes"/>
+        <EditText
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exNote"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/AddKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/extranote"
+            />
+    </RelativeLayout>
+</ScrollView>

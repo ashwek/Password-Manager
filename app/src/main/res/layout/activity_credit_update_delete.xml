@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.nikhil.CreditCardModule.CreditUpdateDeleteActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Credit Card"
+            android:textFontWeight="50"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="12dp"
+            android:layout_alignParentStart="true"
+            android:onClick="backfunction"
+            android:backgroundTint="@color/colorPrimary"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_arrow_back">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"
+        android:layoutMode="opticalBounds"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="update"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_update"
+            android:tint="@color/white"
+            app:maxImageSize="35dp" />
+        <TextView
+            android:id="@+id/CreditTitle"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/darkblack"
+            android:layout_height="wrap_content"
+            android:text="Card Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/AccNum"
+            android:layout_width="160dp"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:layout_height="wrap_content"
+            android:text="Account Number:"
+            android:layout_below="@+id/CreditTitle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AccNumText"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/CreditTitle"
+            android:layout_toEndOf="@+id/AccNum"
+            />
+        <TextView
+            android:id="@+id/Bankname"
+            android:layout_width="160dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Bank Name:"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:layout_below="@+id/AccNum"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BanknameText"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:layout_below="@id/AccNum"
+            android:layout_toEndOf="@+id/Bankname"
+            />
+
+        <TextView
+            android:id="@+id/CardNumber"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Card Number:"
+            android:textColor="#777070"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Bankname"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CardNumberText"
+            android:textColor="#777070"
+            android:textSize="20sp"
+            android:layout_below="@id/BanknameText"
+            android:layout_toEndOf="@+id/CardNumber"
+            />
+
+        <TextView
+            android:id="@+id/ExpiryDate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:text="Expiry Date:"
+            android:layout_below="@+id/CardNumber"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpiryDateText"
+            android:textColor="#777070"
+            android:textSize="20sp"
+            android:layout_below="@id/CardNumberText"
+            android:layout_toEndOf="@+id/ExpiryDate"
+            />
+        <TextView
+            android:id="@+id/Cvv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="CVV:"
+            android:textColor="#777070"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/ExpiryDate"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CvvText"
+            android:textColor="#777070"
+            android:textSize="20sp"
+            android:layout_below="@id/ExpiryDateText"
+            android:layout_toEndOf="@+id/Cvv"
+            />
+
+
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Cvv"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:text="Extra Notes"/>
+        <TextView
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exNote"
+            android:height="80dp"
+            android:scrollbars="vertical"
+            android:textColor="#777070"
+            android:textSize="20sp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

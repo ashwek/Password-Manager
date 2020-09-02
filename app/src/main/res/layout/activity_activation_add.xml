@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.ActivationKeyModule.ActivationAddActivity">
+
+        <TextView
+            android:id="@+id/ActivationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activation_keys"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/software_name"
+        android:layout_below="@+id/ActivationTitle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Name"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Key"
+            android:layout_below="@+id/Name"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/key"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpiryDate"
+            android:layout_below="@+id/key"
+            android:hint="Expiry Date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/ExpiryDateet"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ExpiryDate"
+                android:inputType="date"
+                android:clickable="true"
+                android:focusable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ExpiryDate"
+            android:textSize="15sp"
+            android:text="Extra Notes"/>
+
+        <EditText
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exNote"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/AddKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/extranote"
+            />
+    </RelativeLayout>
+</ScrollView>

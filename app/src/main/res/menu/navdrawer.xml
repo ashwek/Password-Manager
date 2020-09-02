@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_nav_credit"
+        android:id="@+id/credit"
+        android:title="Credits"/>
+    <item
+        android:icon="@drawable/ic_nav_setting"
+        android:id="@+id/setting"
+        android:title="Settings"/>
+    <item
+        android:icon="@drawable/ic_nav_aboutus"
+        android:id="@+id/aboutus"
+        android:title="About Us"/>
+    <item
+        android:icon="@drawable/ic_nav_share"
+        android:id="@+id/shareapp"
+        android:title="Share App"/>
+    <item
+        android:icon="@drawable/rating"
+        android:id="@+id/rateus"
+        android:title="Rate Us"/>
+    <item
+        android:icon="@drawable/ic_nav_logout"
+        android:id="@+id/logout"
+        android:title="Logout"/>
+
+</menu>

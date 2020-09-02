@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhil.EnPass.UserWelcomeSelectionActivity"
+    >
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/appicon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="80dp"/>
+
+        <LinearLayout
+            android:id="@+id/welcomescreenbuttongrp"
+            android:layout_below="@+id/applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="New Here?\nSignUp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-6dp"
+                        app:lottie_autoPlay="true"
+                        android:onClick="opensignup"
+                        app:lottie_fileName="registration.json"
+                        app:lottie_loop="true" />
+
+            </LinearLayout>
+            <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                          <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="300dp"
+                            android:src="@drawable/line" />
+            </LinearLayout>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="Existing User? \nSignIn"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            app:lottie_autoPlay="true"
+                            android:onClick="opensignin"
+                            app:lottie_enableMergePathsForKitKatAndAbove="true"
+                            app:lottie_fileName="login_person.json"
+                            app:lottie_loop="true" />
+
+         </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

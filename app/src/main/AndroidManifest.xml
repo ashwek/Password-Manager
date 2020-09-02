@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.nikhil.EnPass">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.nikhil.SettingModules.RetriveMasterpassActivity">
+            <intent-filter>
+                <action android:name="your.action.retrivemasterpass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nikhil.SettingModules.AboutusActivity" />
+        <activity
+            android:name="com.nikhil.EnPass.RateUsActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name="com.nikhil.PersonalDetailModule.PersonUpdateActivity"
+            android:parentActivityName="com.nikhil.PersonalDetailModule.PersonUpdateDeleteActivity" />
+        <activity
+            android:name="com.nikhil.PersonalDetailModule.PersonUpdateDeleteActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity android:name="com.nikhil.SettingModules.FaqActivity">
+            <intent-filter>
+                <action android:name="your.action.faq" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nikhil.EnPass.UserWelcomeSelectionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nikhil.SettingModules.How_to_useActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="your.action.string1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nikhil.SettingModules.ContactUsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="your.action.string" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nikhil.CreditCardModule.CreditUpdateActivity"
+            android:parentActivityName="com.nikhil.CreditCardModule.CreditUpdateDeleteActivity" />
+        <activity
+            android:name="com.nikhil.SecureNotesModule.NoteUpdateActivity"
+            android:parentActivityName="com.nikhil.SecureNotesModule.NoteUpdateDeleteActivity" />
+        <activity
+            android:name="com.nikhil.ActivationKeyModule.ActivationUpdateActivity"
+            android:parentActivityName="com.nikhil.ActivationKeyModule.ActivationUpdateDeleteActivity" />
+        <activity
+            android:name="com.nikhil.EnPass.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nikhil.EnPass.SelectionDashboardActivity" />
+        </activity>
+        <activity android:name="com.nikhil.EnPass.AppcreditActivity" />
+        <activity
+            android:name="com.nikhil.PasswordStoreModule.PasswordUpdateActivity"
+            android:parentActivityName="com.nikhil.PasswordStoreModule.PasswordUpdateDeleteActivity" />
+        <activity
+            android:name="com.nikhil.SecureNotesModule.NoteUpdateDeleteActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name="com.nikhil.CreditCardModule.CreditUpdateDeleteActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name="com.nikhil.ActivationKeyModule.ActivationUpdateDeleteActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name="com.nikhil.PersonalDetailModule.PersonAddActivity"
+            android:parentActivityName="com.nikhil.PersonalDetailModule.PersonDashActivity" />
+        <activity
+            android:name="com.nikhil.SecureNotesModule.NotesAddActivity"
+            android:parentActivityName="com.nikhil.SecureNotesModule.NotesDashActivity" />
+        <activity
+            android:name="com.nikhil.CreditCardModule.CreditAddActivity"
+            android:parentActivityName="com.nikhil.CreditCardModule.CreditDashActivity" />
+        <activity
+            android:name="com.nikhil.ActivationKeyModule.ActivationAddActivity"
+            android:parentActivityName="com.nikhil.ActivationKeyModule.ActivationDashActivity" />
+        <activity
+            android:name="com.nikhil.PasswordStoreModule.PasswordUpdateDeleteActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name="com.nikhil.PasswordStoreModule.PasswordAddActivity"
+            android:parentActivityName="com.nikhil.PasswordStoreModule.PasswordDashActivity" />
+        <activity
+            android:name="com.nikhil.SecureNotesModule.NotesDashActivity"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity
+            android:name="com.nikhil.PersonalDetailModule.PersonDashActivity"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity
+            android:name="com.nikhil.CreditCardModule.CreditDashActivity"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity
+            android:name="com.nikhil.ActivationKeyModule.ActivationDashActivity"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity android:name="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity android:name="com.nikhil.EnPass.InitialSetupActivity" />
+        <activity android:name="com.nikhil.EnPass.PassActivity" />
+        <activity
+            android:name="com.nikhil.EnPass.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.nikhil.EnPass.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.nikhil.PasswordStoreModule.PasswordDashActivity"
+            android:parentActivityName="com.nikhil.EnPass.SelectionDashboardActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yalantis.ucrop.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

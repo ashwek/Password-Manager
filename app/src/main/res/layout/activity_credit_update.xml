@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.CreditCardModule.CreditUpdateActivity">
+
+        <TextView
+            android:id="@+id/CreditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Credit Card"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AccNumbertv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:layout_below="@+id/CreditTitle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AccNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BankNametv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bank Name"
+            android:layout_below="@+id/AccNumbertv"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/BankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CardNumbertv"
+            android:layout_below="@+id/BankNametv"
+            android:hint="Card Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/CardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpiryDatetv"
+            android:layout_below="@+id/CardNumbertv"
+            android:hint="Expiry Date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cvvtv"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/ExpiryDatetv"
+            android:hint="CVV Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Cvvtv"
+            android:textSize="15sp"
+            android:text="Extra Notes"/>
+        <EditText
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exNote"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/UpdateKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/extranote"
+            />
+    </RelativeLayout>
+</ScrollView>

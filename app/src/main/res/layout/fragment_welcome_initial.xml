@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.nikhil.EnPass.initialsetupfrag.WelcomeInitialFragment"
+    tools:ignore="HardcodedText">
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcomeuserinitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        app:lottie_fileName="welcomeinitial.json"
+        app:lottie_loop="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome user! \nAs we are a Family now.\nLet us know more about you."
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textStyle="italic|bold"
+        />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Start"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/btn_rounded"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
+
+</FrameLayout>

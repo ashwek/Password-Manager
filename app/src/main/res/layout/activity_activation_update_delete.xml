@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.nikhil.ActivationKeyModule.ActivationUpdateDeleteActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Activation Key"
+            android:textFontWeight="50"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="12dp"
+            android:layout_alignParentStart="true"
+            android:onClick="backfunction"
+            android:backgroundTint="@color/colorPrimary"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_arrow_back">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"
+        android:layoutMode="opticalBounds"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="update"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_update"
+            android:tint="@color/white"
+            app:maxImageSize="35dp" />
+        <TextView
+            android:id="@+id/ActiTitle"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/darkblack"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/Softname"
+            android:layout_width="150dp"
+            android:textColor="#777070"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_height="wrap_content"
+            android:text="Software Name:"
+            android:layout_below="@+id/ActiTitle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SoftnameText"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/ActiTitle"
+            android:layout_toEndOf="@+id/Softname"
+            />
+        <TextView
+            android:id="@+id/key"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:layout_height="wrap_content"
+            android:text="Key:"
+            android:layout_below="@+id/Softname"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:id="@+id/SoftkeyText"
+            android:layout_below="@id/SoftnameText"
+            android:layout_toEndOf="@+id/key"
+            />
+
+        <TextView
+            android:id="@+id/Expdate"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:textColor="#777070"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date:"
+            android:layout_below="@+id/key"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/ExpdateText"
+            android:textColor="#777070"
+            android:layout_below="@id/SoftkeyText"
+            android:layout_toEndOf="@+id/Expdate"
+            />
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#777070"
+            android:layout_below="@+id/Expdate"
+            android:text="Extra Notes:"
+            />
+        <TextView
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/exNote"
+            android:height="80dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

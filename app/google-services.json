@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "847238283921",
+    "firebase_url": "https://password-protect.firebaseio.com",
+    "project_id": "password-protect",
+    "storage_bucket": "password-protect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847238283921:android:93327b1ed6d0a0aa44f530",
+        "android_client_info": {
+          "package_name": "com.nikhil.passwordmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847238283921-kcvrm02m5akbhlr9phoqh9bks7l7rqvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nikhil.passwordmanager",
+            "certificate_hash": "d18f5a762b979cb21b5ae4e77b3116d5914e9f88"
+          }
+        },
+        {
+          "client_id": "847238283921-knfm9q2ti4i14ftkqt7fqdjj9coton3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXj9SL4M28ZnFxhvG9EZjv0coOL1m0nBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847238283921-knfm9q2ti4i14ftkqt7fqdjj9coton3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

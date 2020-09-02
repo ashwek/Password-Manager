@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.nikhil.EnPass.initialsetupfrag.UserImgFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold|normal"/>
+    <com.nikhil.EnPass.customViews.MyCircleImageView
+        android:id="@+id/userimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/user_initialsetup"
+        app:civ_border_color="#F40202"
+        app:civ_border_width="1dp" />
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/btn_rounded"
+        android:layout_margin="10dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_forward"
+        android:visibility="gone"
+        android:layout_margin="10dp"/>
+</LinearLayout>
+</ScrollView>

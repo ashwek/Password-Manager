@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/creditlinearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.nikhil.EnPass.AppcreditActivity"
+    tools:ignore="HardcodedText"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:text="Anand Marriappan"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:text="Research Paper and Report"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ashwek Swamy"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:text="Coding and Error Solving"
+        android:autoSizeTextType="uniform"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dhaval Rangrej"
+        android:textStyle="bold"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Co-Ordinator"
+        android:autoSizeTextType="uniform"
+        android:textSize="20sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Farhin Mansur"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:autoSizeTextType="uniform"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Internal Guide"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kewal Mahyawanshi"
+        android:textStyle="bold"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Front End Designer"
+        android:textSize="20sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nikhil Srivastava"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Application developer"
+        android:textSize="20sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pinal Hansora"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Head of Department"
+        android:textSize="20sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prakash Karangia"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Developer"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purvi Bhandari"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUI Designing"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snehal Patel"
+        android:textStyle="bold"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeTextType="uniform"
+        android:text="Research Paper and Report"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    </LinearLayout>
+</ScrollView>

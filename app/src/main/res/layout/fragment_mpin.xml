@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhil.EnPass.initialsetupfrag.MpinFragment"
+    tools:ignore="HardcodedText"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="M-Pin"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/mpin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_text_round_border"
+        android:hint="M-Pin"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm M-Pin"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/cmpin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_text_round_border"
+        android:hint="Confirm M-Pin"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"
+        android:inputType="numberPassword"
+        android:maxLength="4"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Details">
+
+        <EditTextPreference
+            app:key="UserName"
+            app:title="Your Name"
+            app:useSimpleSummaryProvider="true"
+            />
+
+        <EditTextPreference
+            app:key="Loginpin"
+            app:title="Change Pin"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            app:key="masterpassretrive"
+            android:title="Forgot Master Password?">
+            <intent android:action="your.action.retrivemasterpass"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Help">
+        <Preference
+            app:key="useage"
+            app:title="How to use"
+            app:summary="Basic functionality and application usage">
+            <intent android:action="your.action.string1"/>
+        </Preference>
+        <Preference
+            app:key="faq"
+            app:title="FAQ"
+            app:summary="General queries with their answers">
+            <intent android:action="your.action.faq"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Contact">
+        <PreferenceScreen
+            app:key="feedback"
+            app:title="Send Feedback">
+            <intent android:action="your.action.string"/>
+        </PreferenceScreen>
+        <Preference
+            app:key="contact"
+            app:title="Contact us"/>
+    </PreferenceCategory>
+</PreferenceScreen>

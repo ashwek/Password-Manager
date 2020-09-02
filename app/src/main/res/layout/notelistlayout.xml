@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:id="@+id/note_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:id="@+id/textViewNoteTitleNametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#777070"
+            android:text="Title:"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_toEndOf="@+id/textViewNoteTitleNametv"
+            android:id="@+id/textViewNoteTitleName"
+            android:textColor="#777070"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Note Title"
+            android:autoSizeTextType="uniform"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <View
+            android:background="@color/grey"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_below="@+id/textViewNoteTitleName"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

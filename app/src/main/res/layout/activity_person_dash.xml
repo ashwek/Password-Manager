@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhil.PasswordStoreModule.PasswordDashActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PersonalrecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="5dp"
+        app:fabCradleVerticalOffset="15dp"
+        app:hideOnScroll="true"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+        app:fabCradleRoundedCornerRadius="10dp"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Addpersondetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:backgroundTint="@color/colorWhite"
+        app:borderWidth="5dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="35dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

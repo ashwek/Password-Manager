@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.PersonalDetailModule.PersonUpdateActivity">
+        <TextView
+            android:id="@+id/PersonalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Personal info"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/First_Nametv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:layout_below="@+id/PersonalTitle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/First_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Last_Nametv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:layout_below="@+id/First_Nametv"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nicknametv"
+            android:layout_below="@+id/Last_Nametv"
+            android:hint="Nickname">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Emailtv"
+            android:layout_below="@+id/Nicknametv"
+            android:hint="Email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Websitetv"
+            android:layout_below="@+id/Emailtv"
+            android:hint="Website">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Addresstv"
+            android:layout_below="@+id/Websitetv"
+            android:hint="Address">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Mobile_numtv"
+            android:layout_below="@+id/Addresstv"
+            android:hint="Mobile_num">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Mobile_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Birth_datetv"
+            android:layout_below="@+id/Mobile_numtv"
+            android:hint="Birth_date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Birth_datetv"
+            android:textSize="15sp"
+            android:text="Extra Notes"/>
+        <EditText
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exNote"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/UpdateKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/extranote"
+            />
+
+    </RelativeLayout>
+</ScrollView>

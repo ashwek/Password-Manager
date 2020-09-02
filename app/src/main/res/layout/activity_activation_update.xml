@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:context="com.nikhil.ActivationKeyModule.ActivationUpdateActivity">
+
+        <TextView
+            android:id="@+id/ActivationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Keys"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Nametv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/software_name"
+            android:layout_below="@+id/ActivationTitle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Nametv"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/keytv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Key"
+            android:layout_below="@+id/Nametv"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/keytv"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpiryDatetv"
+            android:layout_below="@+id/keytv"
+            android:hint="Expiry Date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ExpiryDatetv"
+                android:inputType="date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/exNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ExpiryDatetv"
+            android:textSize="15dp"
+            android:text="Extra Notes"/>
+        <EditText
+            android:id="@+id/extranote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exNote"
+            android:backgroundTint="@color/colorAccent"
+            android:height="80dp"/>
+
+        <Button
+            android:id="@+id/UpdateKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/extranote"
+            />
+    </RelativeLayout>
+</ScrollView>
